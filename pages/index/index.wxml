@@ -1,0 +1,5 @@
+<view class="index-page">
+  <mini-gesture-lock container-width="{{600}}" cycleRadius="{{70}}" bind:end="onEnd" password="{{password}}"></mini-gesture-lock>
+  <view class="result">{{data}}</view>
+  <view class="result">正确密码是：12369</view>
+</view>

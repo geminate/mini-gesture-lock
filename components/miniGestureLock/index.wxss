@@ -1,0 +1,38 @@
+.gesture-lock {
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.gesture-lock .cycle {
+  box-sizing: border-box;
+  position: absolute;
+  border: 2px solid #6af;
+  border-radius: 50%;
+}
+
+.gesture-lock .cycle.check:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 32%;
+  height: 32%;
+  border: 2px solid #6af;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gesture-lock .line {
+  height: 0;
+  border-top: 2px solid #6af;
+  position: absolute;
+  transform-origin: left center;
+}
+
+.gesture-lock.error .cycle.check, .gesture-lock.error .cycle.check:after,
+.gesture-lock.error .line {
+  border-color: #ffa197;
+}

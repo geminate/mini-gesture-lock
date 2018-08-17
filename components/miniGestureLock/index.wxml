@@ -1,0 +1,11 @@
+<view class="gesture-lock {{error?'error':''}}" style="width:{{containerWidth + 'rpx'}};height:{{containerWidth +'rpx'}}" bindtouchstart="onTouchStart" bindtouchmove="onTouchMove" bindtouchend="onTouchEnd">
+
+  <!-- 9 个圆 -->
+  <view class="cycle {{item.check?'check':''}}" wx:for="{{circleArray}}" wx:for-index="i" wx:for-item="item" wx:key="i" style="left:{{item.style.left}};top:{{item.style.top}};width:{{item.style.width}};height:{{item.style.width}}"></view>
+
+  <!-- 已激活锁之间的线段 -->
+  <view class="line" wx:for="{{lineArray}}" wx:for-index="i" wx:for-item="item" wx:key="i" style="left:{{item.activeLeft}};top:{{item.activeTop}};width:{{item.activeWidth}};transform:rotate({{item.activeRotate}});"></view>
+
+  <!-- 最后一个激活的锁与当前位置之间的线段 -->
+  <view class="line" style="left:{{activeLine.activeLeft}};top:{{activeLine.activeTop}};width:{{activeLine.activeWidth}};transform:rotate({{activeLine.activeRotate}});"></view>
+</view>
