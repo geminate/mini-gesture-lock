@@ -6,7 +6,7 @@
 
 ## 截图
 
-<p align="center"><img src="http://liuhuihao.com/wp-content/uploads/2018/08/gesture.gif" alt="d-tools"></p>
+<p align="center"><img src="https://github.com/geminate/geminate.github.io/blob/master/assets/images/2018/gesture.gif" alt="d-tools"></p>
 
 ## 构建
 
